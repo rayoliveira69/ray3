@@ -1,7 +1,7 @@
 criaCartao(
     'Programação',
-    'O que é Python?',
-    'O Python é uma linguagem de programação'
+    'O que é covid 19?',
+    'é um um vírus que circula pelo muno'
 )
 
 criaCartao(
@@ -18,3 +18,19 @@ criaCartao(
 function criaCartao (categoria, pergunta, resposta) {
     console.log(categoria, pergunta, resposta)
 }
+cartao.innerHTML = `
+        <div class="cartao__conteudo">
+        <h3>${categoria}</h3>
+        <div class="cartao__conteudo__pergunta">
+                <p>${pergunta}</p>
+        </div>
+        <div class="cartao__conteudo__resposta">
+                <p>${resposta}</p>
+        </div>
+        </div>
+`
+criaCartao(
+    'Lingua inglesa',
+    'Como se diz OI em inglês?',
+    'Oi em ingles é HI (RAI)'
+) 
